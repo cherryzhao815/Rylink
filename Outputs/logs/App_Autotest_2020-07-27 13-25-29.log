@@ -1,0 +1,59 @@
+ Mon, 27 Jul 2020 13:25:36  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 可见
+ Mon, 27 Jul 2020 13:25:44  INFO basepage.py wait_eleVisible [ line:39 ] 确认登陆按钮是否存在: 元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 已可见,等待起始时间：2020-07-27 13:25:36.181569,等待结束时间：2020-07-27 13:25:44.233385.等待时长：8
+ Mon, 27 Jul 2020 13:26:49  INFO basepage.py get_element [ line:56 ] 点击登陆按钮 查找元素：('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']")
+ Mon, 27 Jul 2020 13:26:49  ERROR basepage.py get_element [ line:60 ] 查找元素失败！！！
+Traceback (most recent call last):
+  File "D:\workspace\HooAppUIProject\Common\basepage.py", line 58, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+ Mon, 27 Jul 2020 13:26:49  ERROR basepage.py save_screenshot [ line:170 ] 截图失败
+Traceback (most recent call last):
+  File "D:\workspace\HooAppUIProject\Common\basepage.py", line 58, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\workspace\HooAppUIProject\Common\basepage.py", line 167, in save_screenshot
+    self.driver.save_screenshot(filePath)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+

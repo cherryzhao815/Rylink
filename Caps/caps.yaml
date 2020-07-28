@@ -1,0 +1,13 @@
+platformName: Android
+platformVersion: 5.1.1
+deviceName: 127.0.0.1:62001 device
+appPackage: com.hufu.qianbao
+appActivity: com.hufu.qianbao.activitys.SplashActivity
+automationName: UIAutomator2
+
+
+#desired_caps["platformName"] = "Android"
+#desired_caps["platformVersion"] = "7.1"
+#desired_caps["deviceName"] = "Android Emulator"
+#desired_caps["appPackage"] = "com.xxzb.fenwoo"
+#desired_caps["appActivity"] = "com.xxzb.fenwoo.activity.addition.WelcomeActivity"

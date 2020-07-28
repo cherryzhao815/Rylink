@@ -1,0 +1,23 @@
+ Mon, 27 Jul 2020 13:14:02  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']") 可见
+ Mon, 27 Jul 2020 13:14:24  INFO basepage.py wait_eleVisible [ line:39 ] 点击法币小程序: 元素 ('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']") 已可见,等待起始时间：2020-07-27 13:14:02.181796,等待结束时间：2020-07-27 13:14:24.177526.等待时长：21
+ Mon, 27 Jul 2020 13:14:24  INFO basepage.py get_element [ line:56 ] 点击法币小程序 查找元素：('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']")
+ Mon, 27 Jul 2020 13:14:26  INFO basepage.py click_element [ line:80 ] 点击法币小程序 点击元素：('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']")
+ Mon, 27 Jul 2020 13:14:34  ERROR basepage.py click_element [ line:84 ] 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "D:\workspace\HooAppUIProject\Common\basepage.py", line 82, in click_element
+    ele.click()
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.xpath: //android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']' does not exist in DOM anymore
+
+ Mon, 27 Jul 2020 13:14:35  INFO basepage.py save_screenshot [ line:168 ] 截屏成功。图片路径为D:\workspace\HooAppUIProject\Outputs/screenshots/点击法币小程序_2020-07-27-13-14-34.png

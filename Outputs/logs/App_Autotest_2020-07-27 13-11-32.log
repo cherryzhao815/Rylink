@@ -1,0 +1,14 @@
+ Mon, 27 Jul 2020 13:11:52  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']") 可见
+ Mon, 27 Jul 2020 13:12:11  INFO basepage.py wait_eleVisible [ line:39 ] 点击法币小程序: 元素 ('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']") 已可见,等待起始时间：2020-07-27 13:11:52.219244,等待结束时间：2020-07-27 13:12:11.173706.等待时长：18
+ Mon, 27 Jul 2020 13:12:11  INFO basepage.py get_element [ line:56 ] 点击法币小程序 查找元素：('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']")
+ Mon, 27 Jul 2020 13:12:14  INFO basepage.py click_element [ line:80 ] 点击法币小程序 点击元素：('xpath', "//android.widget.ImageView[@resource-id='com.hufu.qianbao:id/iv_otc']")
+ Mon, 27 Jul 2020 13:12:35  INFO my_log.py my_log [ line:27 ] 等待元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_amount']")可见
+ Mon, 27 Jul 2020 13:12:37  INFO my_log.py my_log [ line:27 ] wait_time:2
+ Mon, 27 Jul 2020 13:12:37  INFO my_log.py my_log [ line:27 ] 等待结束，等待时长为2秒
+ Mon, 27 Jul 2020 13:12:37  INFO my_log.py my_log [ line:27 ] 查找元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_amount']")
+ Mon, 27 Jul 2020 13:12:38  INFO my_log.py my_log [ line:27 ] 向元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_amount']")输入文本1000
+ Mon, 27 Jul 2020 13:12:38  INFO my_log.py my_log [ line:27 ] 等待元素('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_buy']")可见
+ Mon, 27 Jul 2020 13:12:39  INFO my_log.py my_log [ line:27 ] wait_time:0
+ Mon, 27 Jul 2020 13:12:39  INFO my_log.py my_log [ line:27 ] 等待结束，等待时长为0秒
+ Mon, 27 Jul 2020 13:12:39  INFO my_log.py my_log [ line:27 ] 查找元素('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_buy']")
+ Mon, 27 Jul 2020 13:12:39  INFO my_log.py my_log [ line:27 ] 点击元素('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_buy']")

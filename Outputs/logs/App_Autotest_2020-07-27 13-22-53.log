@@ -1,0 +1,4 @@
+ Mon, 27 Jul 2020 13:22:53  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 可见
+ Mon, 27 Jul 2020 13:23:27  INFO basepage.py wait_eleVisible [ line:39 ] 确认登陆按钮是否存在: 元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 已可见,等待起始时间：2020-07-27 13:22:53.370515,等待结束时间：2020-07-27 13:23:27.406359.等待时长：34
+ Mon, 27 Jul 2020 13:23:27  INFO basepage.py get_element [ line:56 ] 点击登陆按钮 查找元素：('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']")
+ Mon, 27 Jul 2020 13:23:38  INFO basepage.py click_element [ line:80 ] 点击登陆按钮 点击元素：('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']")

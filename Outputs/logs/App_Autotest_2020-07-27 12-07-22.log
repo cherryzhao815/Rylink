@@ -1,0 +1,29 @@
+ Mon, 27 Jul 2020 12:07:41  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 可见
+ Mon, 27 Jul 2020 12:08:08  INFO basepage.py wait_eleVisible [ line:39 ] 点击登陆注册按钮: 元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 已可见,等待起始时间：2020-07-27 12:07:41.568715,等待结束时间：2020-07-27 12:08:08.658948.等待时长：27
+ Mon, 27 Jul 2020 12:08:08  INFO basepage.py get_element [ line:56 ] 点击登陆注册按钮 查找元素：('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']")
+ Mon, 27 Jul 2020 12:08:20  INFO basepage.py click_element [ line:80 ] 点击登陆注册按钮 点击元素：('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']")
+ Mon, 27 Jul 2020 12:08:41  INFO my_log.py my_log [ line:27 ] 等待元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_phone']")可见
+ Mon, 27 Jul 2020 12:08:41  INFO my_log.py my_log [ line:27 ] wait_time:0
+ Mon, 27 Jul 2020 12:08:41  INFO my_log.py my_log [ line:27 ] 等待结束，等待时长为0秒
+ Mon, 27 Jul 2020 12:08:41  INFO my_log.py my_log [ line:27 ] 查找元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_phone']")
+ Mon, 27 Jul 2020 12:08:41  INFO my_log.py my_log [ line:27 ] 向元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_phone']")输入文本13012340001
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] 等待元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_pwd']")可见
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] wait_time:0
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] 等待结束，等待时长为0秒
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] 查找元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_pwd']")
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] 向元素('xpath', "//android.widget.EditText[@resource-id='com.hufu.qianbao:id/et_input_pwd']")输入文本Pass1234
+ Mon, 27 Jul 2020 12:08:42  INFO my_log.py my_log [ line:27 ] 等待元素('xpath', "//android.widget.Button[@resource-id='com.hufu.qianbao:id/bt_login']")可见
+ Mon, 27 Jul 2020 12:08:43  INFO my_log.py my_log [ line:27 ] wait_time:0
+ Mon, 27 Jul 2020 12:08:43  INFO my_log.py my_log [ line:27 ] 等待结束，等待时长为0秒
+ Mon, 27 Jul 2020 12:08:43  INFO my_log.py my_log [ line:27 ] 查找元素('xpath', "//android.widget.Button[@resource-id='com.hufu.qianbao:id/bt_login']")
+ Mon, 27 Jul 2020 12:08:43  INFO my_log.py my_log [ line:27 ] 点击元素('xpath', "//android.widget.Button[@resource-id='com.hufu.qianbao:id/bt_login']")
+ Mon, 27 Jul 2020 12:08:43  INFO basepage.py wait_eleVisible [ line:32 ] 等待元素 ('xpath', "//android.widget.TextView[@resource-id='com.hufu.qianbao:id/tv_login_register']") 可见
+ Mon, 27 Jul 2020 12:09:13  ERROR basepage.py wait_eleVisible [ line:43 ] 等待元素可见异常
+Traceback (most recent call last):
+  File "D:\workspace\HooAppUIProject\Common\basepage.py", line 36, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\zhili.zhao\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+ Mon, 27 Jul 2020 12:09:14  INFO basepage.py save_screenshot [ line:168 ] 截屏成功。图片路径为D:\workspace\HooAppUIProject\Outputs/screenshots/首页_登陆按钮是否存在_2020-07-27-12-09-13.png

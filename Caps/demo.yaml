@@ -1,0 +1,10 @@
+name: hello
+sex: female
+age: 18
+area: shanghai
+hobby:
+  - 睡觉
+  - 吃饭
+  -
+     game1: 王者荣耀
+     game2: 吃鸡
