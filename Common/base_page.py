@@ -1,6 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.common.keys import Keys
 
 import time
 import allure
@@ -9,8 +10,8 @@ from datetime import datetime
 from HooAppUIProject.Common.my_log import MyLog
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
-import win32gui
-import win32con
+# import win32gui
+# import win32con
 import os
 
 '''页面操作基础方法类'''
@@ -22,6 +23,10 @@ class BasePage():
         self.driver = driver
 
     "web页面操作类"
+
+    # 手机键盘缩回
+    def sys_hide_keyboard(self):
+        self.driver.hide_keyboard()
 
     # 等待元素可见
     def wait_ele_visible(self, locator, doc="", times=30, poll_frequency=0.5):
@@ -120,7 +125,9 @@ class BasePage():
         MyLog().info('查找元素{}'.format(locator))
         try:
             # self.wait_ele_visible(*locator)
+            time.sleep(2)
             ele = self.driver.find_element(*locator)
+            print(ele)
             # 返回元素对象，以便进行后续操作
             return ele
         except Exception as e:
@@ -468,8 +475,10 @@ class BasePage():
             raise e
 
     # 滑屏事件（向上，向下，向左，向右）
-    def swipe_up(self, size, time=200, n=1):
+    def swipe_up(self, time=200, n=1):
         # 向上滑屏
+        size = self.driver.get_window_size()
+        # print(size)
         start_x = size["width"] * 0.5
         start_y = size["height"] * 0.75
         end_x = size["width"] * 0.5
@@ -477,10 +486,11 @@ class BasePage():
         for i in range(n):
             self.driver.swipe(start_x, start_y, end_x, end_y, time)
             sleep(2)
-            print('执行滑屏操作')
+            print('执行向上滑动屏幕')
 
-    def swipe_down(self, size, time=200, n=1):
+    def swipe_down(self, time=200, n=1):
         # 向下滑屏
+        size = self.driver.get_window_size()
         start_x = size["width"] * 0.5
         start_y = size["height"] * 0.25
         end_x = size["width"] * 0.5
@@ -488,12 +498,14 @@ class BasePage():
         for i in range(n):
             self.driver.swipe(start_x, start_y, end_x, end_y, time)
             sleep(2)
+            print('执行向下滑动屏幕')
 
-    def swipe_left(self, size, time=200, n=1):
+    def swipe_left(self, time=200, n=1):
         # 向左滑屏
-        start_x = size["width"] * 0.8
+        size = self.driver.get_window_size()
+        start_x = size["width"] * 0.75
         start_y = size["height"] * 0.5
-        end_x = size["width"] * 0.2
+        end_x = size["width"] * 0.25
         end_y = size["height"] * 0.5
         for i in range(n):
             self.driver.swipe(start_x, start_y, end_x, end_y, time)
@@ -501,9 +513,10 @@ class BasePage():
 
     def swipe_right(self, size, time=200, n=1):
         # 向右滑屏
-        start_x = size["width"] * 0.1
+        size = self.driver.get_window_size()
+        start_x = size["width"] * 0.25
         start_y = size["height"] * 0.5
-        end_x = size["width"] * 0.9
+        end_x = size["width"] * 0.75
         end_y = size["height"] * 0.5
         for i in range(n):
             self.driver.swipe(start_x, start_y, end_x, end_y, time)
